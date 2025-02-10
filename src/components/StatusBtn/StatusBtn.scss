@@ -1,0 +1,31 @@
+.StatusBtn {
+  width: fit-content;
+  height: 20px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  background-color: white;
+  color: green;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 1px black;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transform: scale(0.8);
+
+  .dot {
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px black;
+  }
+}
+
+.acknowledged {
+  background-color: green;
+  color: white;
+}

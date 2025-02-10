@@ -1,0 +1,95 @@
+body {
+  background-color: #404040;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-left: 100px;
+  font-family: sans-serif;
+}
+
+.test {
+  width: 100px;
+  height: 100px;
+  background-color: cyan;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black, inset -2px -2px 2px black,
+    inset 2px 2px 2px white;
+  transition: all 0.7s ease-in-out;
+
+  &:hover {
+    background-color: white;
+    width: 110px;
+    height: 110px;
+  }
+}
+
+.test-btn {
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black, inset -2px -2px 2px black,
+    inset 2px 2px 2px white;
+  background-color: white;
+  margin-top: 20px;
+  transition: background-color 0.5s ease-in;
+
+  &:hover {
+    background-color: cyan;
+  }
+}
+
+.testList {
+  list-style: none;
+  background-color: lightblue;
+  margin-left: 20px;
+  width: 200px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 2px black, inset -2px -2px 2px black,
+    inset 1px 1px 2px white;
+
+  .testListItem {
+    border-bottom: 1px solid black;
+  }
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 50px;
+  background-color: white;
+  margin: 30px;
+  border-radius: 20px;
+  background-color: darkcyan;
+  box-shadow: 2px 2px 2px black, inset -2px -2px 2px black,
+    inset 1px 1px 2px white;
+
+  .nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    li {
+      cursor: pointer;
+      color: white;
+
+      &:hover {
+        text-shadow: 1px 1px 1px black;
+      }
+    }
+  }
+}
+
+.logo {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  width: 150px;
+  opacity: 0.3;
+  z-index: -1;
+}

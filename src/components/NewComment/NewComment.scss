@@ -1,0 +1,64 @@
+.NewComment {
+  width: 230px;
+  background-color: rgb(232, 232, 232);
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  padding: 10px;
+  margin-top: 50px;
+  display: none;
+  position: absolute;
+  top: 200px;
+  left: 450px;
+
+  h3 {
+    font-weight: bold;
+    font-size: 12px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    letter-spacing: 1px;
+  }
+
+  .comment {
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    gap: 20px;
+
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      transition: text-decoration 0.5s ease;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.rsw-editor {
+  width: 210px;
+  height: 120px;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.rsw-ce {
+  font-size: 12px;
+}
+
+.rsw-toolbar {
+  background-color: white;
+  border-bottom: 1px solid white;
+}

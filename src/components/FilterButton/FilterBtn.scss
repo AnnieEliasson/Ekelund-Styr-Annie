@@ -1,0 +1,19 @@
+.FilterBtn {
+  border: 0px solid #322f6d;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 85px;
+  height: 40px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #322f6d;
+  }
+}

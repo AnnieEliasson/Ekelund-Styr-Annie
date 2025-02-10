@@ -1,0 +1,89 @@
+.AboutCard {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  padding: 10px 0;
+
+  .about {
+    border: 0px solid black;
+    width: 60%;
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    letter-spacing: 1px;
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: 40px;
+    }
+
+    .link {
+      margin-top: 10px;
+    }
+  }
+
+  .alarms {
+    border: 0px solid black;
+    width: 40%;
+    margin-top: 10px;
+    padding-right: 50px;
+
+    .title {
+      font-size: 20px;
+    }
+
+    .total {
+      font-size: 24px;
+      font-weight: bold;
+      color: green;
+    }
+
+    .total-alarms {
+      height: 60px;
+      border-bottom: 1px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 35px;
+      margin-top: 20px;
+    }
+
+    .category-alarms {
+      height: 60px;
+      border: 0px solid blue;
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      padding: 0 25px;
+      margin-bottom: 20px;
+
+      .category-alarm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding-top: 20px;
+
+        img {
+          height: 18px;
+        }
+
+        p:nth-last-child(1) {
+          color: green;
+          font-weight: bold;
+          font-size: 16px;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.507);
+        }
+      }
+    }
+  }
+}
