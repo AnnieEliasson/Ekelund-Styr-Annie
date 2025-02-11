@@ -1,5 +1,5 @@
 import "./Table.scss";
-import { properties } from "../../testData"; // Importera din data
+import { properties } from "../../testData";
 import StatusBtn from "../StatusBtn/StatusBtn";
 import { CiShare1 } from "react-icons/ci";
 

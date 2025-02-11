@@ -51,3 +51,10 @@
     }
   }
 }
+
+$breakpoint-tablet: 450px;
+@media (max-width: $breakpoint-tablet) {
+  .SideBar {
+    display: none;
+  }
+}

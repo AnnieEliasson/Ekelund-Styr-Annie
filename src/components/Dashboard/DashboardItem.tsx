@@ -7,7 +7,6 @@ type Props = {
     name: string;
     streetAddress: string;
     postalAddress: string;
-    totalAlarms: number;
     technicalAlarms: number;
     operationalAlarms: number;
     safetyAlarms: number;
@@ -20,7 +19,7 @@ const DashboardItem = ({ searchResult }: Props) => {
     <>
       {searchResult.map((item) => {
         return (
-          <div className="dashboard-item">
+          <div key={item.name} className="dashboard-item">
             {item.newAlarms > 0 && <NewAlarmTag newAlarms={item.newAlarms} />}
 
             <div className="info">

@@ -1,39 +1,63 @@
 import "./FilterBar.scss";
+import { alarms } from "../../testData";
+import { useState } from "react";
 
 const FilterBar = () => {
-  const alarms = [
-    { name: "Technical Alarms", symbol: "./src/assets/technical.svg" },
-    { name: "Operational Alarms", symbol: "src/assets/Operational.svg" },
-    { name: "Safety Alarms", symbol: "src/assets/Saftey.svg" },
-    { name: "Device Alarms", symbol: "src/assets/device.svg" },
-  ];
+  const [choosenFilters, setChoosenFilters] = useState<string[]>([]);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const clickedItemId = e.target.id;
+    if (!clickedItemId) return;
+
+    setChoosenFilters((prevFilters) =>
+      prevFilters.includes(clickedItemId)
+        ? prevFilters.filter((filter) => filter !== clickedItemId)
+        : [...prevFilters, clickedItemId]
+    );
+  };
+
+  const removeFilter = (filterToRemove: string) => {
+    setChoosenFilters((prevFilters) =>
+      prevFilters.filter((filter) => filter !== filterToRemove)
+    );
+  };
 
   return (
-    <div className="FilterBar">
-      <ul className="filter-nav-list">
-        <li className="filter-btns">Filters</li>
-        {alarms.map((alarm) => {
-          return (
-            <li className="filter-btns">
+    <div className="filter-container">
+      <div className="FilterBar">
+        <ul className="filter-nav-list">
+          <li className="filter-btns">Filters</li>
+          {alarms.map((alarm) => (
+            <li key={alarm.name} className="filter-btns">
               <img src={alarm.symbol} alt="" />
-              {alarm.name}
+              <p>{alarm.name}</p>
               <ul className="dropdown">
-                <li className="filter-option">
-                  <input type="checkbox" name="" id="test1" />
-                  <label htmlFor="test1">test1</label>
-                </li>
-                <li className="filter-option">
-                  <input type="checkbox" name="" id="test2" />
-                  <label htmlFor="test2">test2</label>
-                </li>
-                <li className="filter-option">
-                  <input type="checkbox" name="" id="test3" />
-                  <label htmlFor="test3">test3</label>
-                </li>
+                {alarm.options.map((option) => (
+                  <li key={option} className="filter-option">
+                    <input
+                      type="checkbox"
+                      id={option}
+                      onChange={handleChange}
+                      checked={choosenFilters.includes(option)}
+                    />
+                    <label htmlFor={option}>{option}</label>
+                  </li>
+                ))}
               </ul>
             </li>
-          );
-        })}
+          ))}
+        </ul>
+      </div>
+
+      <ul className="used-filter-container">
+        {choosenFilters.map((filter) => (
+          <li key={filter} className="used-filter">
+            {filter}{" "}
+            <button className="close-btn" onClick={() => removeFilter(filter)}>
+              <img src="src/assets/close_small.svg" alt="x" />
+            </button>
+          </li>
+        ))}
       </ul>
     </div>
   );

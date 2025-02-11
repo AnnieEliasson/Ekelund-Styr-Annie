@@ -90,3 +90,26 @@ export const properties = [
     newAlarms: 0,
   },
 ];
+
+export const alarms = [
+  {
+    name: "Technical Alarms",
+    symbol: "./src/assets/technical.svg",
+    options: ["Communication Failure", "Sensor/Sum Alarms"],
+  },
+  {
+    name: "Operational Alarms",
+    symbol: "src/assets/Operational.svg",
+    options: ["Zone Alarms", "Manual Operations"],
+  },
+  {
+    name: "Safety Alarms",
+    symbol: "src/assets/Saftey.svg",
+    options: ["Fire Alarms"],
+  },
+  {
+    name: "Device Alarms",
+    symbol: "src/assets/device.svg",
+    options: ["Heating Alarms", "Ventilation Alarms", "Cooling Alarms"],
+  },
+];
