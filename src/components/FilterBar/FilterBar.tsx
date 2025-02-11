@@ -40,7 +40,9 @@ const FilterBar = () => {
                       onChange={handleChange}
                       checked={choosenFilters.includes(option)}
                     />
-                    <label htmlFor={option}>{option}</label>
+                    <label className="checkbox-lable" htmlFor={option}>
+                      {option}
+                    </label>
                   </li>
                 ))}
               </ul>

@@ -13,7 +13,7 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1370px;
+  max-width: 100%;
   /* min-height: 145px; */
   gap: 10px;
   padding: 10px;
@@ -25,11 +25,12 @@
 .Dashboard {
   border: 0px solid blue;
   width: 100%;
-  max-width: 1370px;
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, min(290px));
   grid-template-rows: 220px;
   justify-content: center;
+  align-items: center;
 
   .dashboard-item {
     width: 290px;
@@ -177,4 +178,14 @@
 .operational {
   color: #e57d23;
   text-shadow: 1px 1px 1px black;
+}
+
+$breakpoint-tablet: 350px;
+@media (max-width: $breakpoint-tablet) {
+  .dashboard-item {
+    transform: scale(0.9) !important;
+  }
+  .header {
+    margin: 0;
+  }
 }

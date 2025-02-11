@@ -65,11 +65,17 @@
         padding: 5px;
 
         .filter-option {
-          min-width: 210px;
-          padding: 10px;
+          min-width: 220px;
           display: flex;
           gap: 10px;
-          cursor: pointer;
+          padding-left: 10px;
+
+          .checkbox-lable {
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            text-align: left;
+          }
 
           &:hover {
             background-color: #eef3f7;
@@ -140,8 +146,4 @@ $breakpoint-tablet: 960px;
   .FilterBarCompact {
     display: flex;
   }
-}
-
-label {
-  cursor: pointer;
 }
