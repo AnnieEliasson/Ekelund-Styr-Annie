@@ -2,7 +2,7 @@ import { useState } from "react";
 import FilterBar from "../FilterBar/FilterBar";
 import SearchSiteBar from "../SearchBar/SearchSiteBar/SearchSiteBar";
 import "./Dashboard.scss";
-import DashboardItem from "./DashboardItem";
+import DashboardItem from "./DashboardItem/DashboardItem";
 import { useProperties } from "../../context/PropertyContextProvider";
 import FilterBarCompact from "../FilterBar/FilterBarCompact";
 const Dashboard = () => {

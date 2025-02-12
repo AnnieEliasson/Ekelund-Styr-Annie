@@ -29,7 +29,10 @@ const SideBar = () => {
       <Notifications />
       <div className="SideBar">
         <div className="top-container">
-          <img src="src\components\SideBar\image.png" alt="logo" />
+          <img
+            src="https://cdn.prod.website-files.com/6391a37849aaab9664c88b08/6399deb31cea5f52010cf608_ekelund_logo-symbol_1.svg"
+            alt="logo"
+          />
           <br />
           <div className="icon-btn" onClick={() => toggleNotificationWindow()}>
             {newNotification ? <RiMailUnreadLine /> : <RiMailLine />}

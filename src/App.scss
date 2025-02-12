@@ -1,7 +1,9 @@
+@use "./styles/colors" as *;
+
 body {
-  background-color: #404040;
+  background-color: $bg-color;
   font-family: sans-serif;
-  padding-left: 60px;
+  padding-left: 90px;
 }
 
 .logo {

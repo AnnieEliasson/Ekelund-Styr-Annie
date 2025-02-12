@@ -1,3 +1,5 @@
+@use "../../styles/colors" as *;
+
 .SideBar {
   width: 100px;
   height: 100vh;
@@ -9,6 +11,8 @@
   position: fixed;
   top: 0;
   left: 0;
+  color: black;
+  padding: 10px;
 
   .top-container {
     text-align: center;
@@ -28,18 +32,18 @@
 
     .user {
       font-size: 50px;
-      color: rgb(41, 53, 88);
+      color: $primary-color;
       margin-top: -15px;
     }
   }
 
   img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
   }
 
   .icon-btn {
-    width: 90%;
+    width: 100%;
     padding: 10px 0;
     border-radius: 10px;
     margin-top: -20px;
@@ -47,7 +51,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: #eef3f7;
+      background-color: $hover;
     }
   }
 }

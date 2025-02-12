@@ -1,4 +1,4 @@
-import "./Dashboard.scss";
+import "./NewAlarmTag.scss";
 
 type Props = {
   newAlarms: number;

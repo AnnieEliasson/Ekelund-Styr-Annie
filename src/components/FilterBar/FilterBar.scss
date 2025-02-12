@@ -1,3 +1,4 @@
+@use "../../styles/colors" as *;
 .filter-container {
   display: flex;
   flex-direction: column;
@@ -15,6 +16,7 @@
   align-items: center;
   margin-right: 50px;
   margin-bottom: 10px;
+  background: linear-gradient(0deg, $secondary-color, $bg-color-secondary);
 
   .filter-nav-list {
     list-style: none;
@@ -32,11 +34,11 @@
       position: relative;
 
       &:hover {
-        background-color: #eef3f7;
+        background-color: $hover;
       }
 
       &:first-child:hover {
-        background-color: white;
+        background-color: transparent;
       }
 
       &:first-child {
@@ -54,7 +56,7 @@
 
       .dropdown {
         list-style: none;
-        background-color: white;
+        background-color: $bg-color-secondary;
         position: absolute;
         top: 46px;
         left: 0;
@@ -78,7 +80,7 @@
           }
 
           &:hover {
-            background-color: #eef3f7;
+            background-color: $hover;
           }
         }
       }
@@ -92,24 +94,26 @@
   flex-wrap: wrap;
   gap: 8px;
   max-width: 760px;
+  justify-content: center;
 
   .used-filter {
     background-color: white;
-    box-shadow: 2px 2px 5px black;
+    background: linear-gradient(0deg, $secondary-color, $bg-color-secondary);
+    box-shadow: 1px 1px 5px black;
     border-radius: 30px;
     padding: 3px 5px;
     padding-left: 10px;
     display: flex;
     align-items: center;
     gap: 3px;
-    font-size: 10px;
-    letter-spacing: 1px;
+    font-size: 12px;
     font-weight: bold;
+    cursor: default;
   }
 
   .close-btn {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,6 +121,12 @@
     cursor: pointer;
     border: none;
     transition: transform 0.2s ease-out;
+    padding: 8px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
 
     &:hover {
       transform: scale(1.3);

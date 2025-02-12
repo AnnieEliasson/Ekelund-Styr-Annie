@@ -1,0 +1,79 @@
+@use "../../../styles/colors" as *;
+.dashboard-item {
+  width: 300px;
+  height: 225px;
+  border: 0px solid $secondary-color;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px black, inset 1px 1px 2px white,
+    inset -2px -2px 2px black;
+  padding: 20px;
+  position: relative;
+  background: linear-gradient(0deg, $primary-color, $primary-lightgrey);
+  color: black;
+  /* text-shadow: 1px 1px 1px black; */
+  letter-spacing: 1px;
+  transform: scale(0.9);
+
+  .info {
+    height: 100%;
+
+    h2 {
+      margin-bottom: 5px;
+      color: $ekelund3;
+    }
+
+    .adress {
+      font-size: 12px;
+      opacity: 0.7;
+      font-weight: bold;
+    }
+
+    .alarm-list {
+      width: 80%;
+      margin-top: 18px;
+      font-size: 14px;
+      list-style: none;
+      background: linear-gradient(
+        0deg,
+        $alarm-list-gradient-bottom,
+        $alarm-list-gradient-top
+      );
+      padding: 8px 12px;
+      border-radius: 15px;
+      box-shadow: 2px 2px 1px black, inset 1px 1px 1px white,
+        inset -2px -2px 2px black;
+
+      li {
+        margin-bottom: 3px;
+        text-shadow: 1px 1px 1px black;
+        letter-spacing: 1px;
+        display: flex;
+        font-size: 16px;
+
+        span {
+          font-weight: bold;
+          margin-left: 5px;
+        }
+      }
+
+      li:first-child {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 6px;
+        color: white;
+      }
+    }
+  }
+}
+
+.technical {
+  color: $alarm-technical;
+}
+
+.safety {
+  color: $alarm-safety;
+}
+
+.operational {
+  color: $alarm-operational;
+}

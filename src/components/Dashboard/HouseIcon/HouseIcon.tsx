@@ -1,6 +1,9 @@
 import { useRef } from "react";
-import { Property, useProperties } from "../../context/PropertyContextProvider";
-import "./Dashboard.scss";
+import {
+  Property,
+  useProperties,
+} from "../../../context/PropertyContextProvider";
+import "./HouseIcon.scss";
 
 const HouseIcon = ({ item }: { item: Property }) => {
   const total =

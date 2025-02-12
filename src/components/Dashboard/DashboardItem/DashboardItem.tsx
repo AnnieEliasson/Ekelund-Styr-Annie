@@ -1,6 +1,6 @@
-import "./Dashboard.scss";
-import HouseIcon from "./HouseIcon";
-import NewAlarmTag from "./NewAlarmTag";
+import "./DashboardItem.scss";
+import HouseIcon from "../HouseIcon/HouseIcon";
+import NewAlarmTag from "../NewAlarmTag/NewAlarmTag";
 
 type Props = {
   searchResult: {
