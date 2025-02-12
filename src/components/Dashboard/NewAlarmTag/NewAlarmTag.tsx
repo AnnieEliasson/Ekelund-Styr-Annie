@@ -6,9 +6,9 @@ type Props = {
 
 const NewAlarmTag = ({ newAlarms }: Props) => {
   return (
-    <div className="NewAlarmTag">
+    <button className="NewAlarmTag">
       <p>{newAlarms}</p>
-    </div>
+    </button>
   );
 };
 

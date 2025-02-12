@@ -2,6 +2,7 @@
 .filter-container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 15px;
 }
 
 .FilterBar {
@@ -135,16 +136,31 @@
 }
 
 .FilterBarCompact {
-  min-height: 30px;
+  height: 30px;
   padding: 0 20px;
+  margin-bottom: 10px;
+  border: none;
   border-radius: 30px;
   background-color: white;
+  background: linear-gradient(0deg, $secondary-color, $bg-color-secondary);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   display: none;
   letter-spacing: 1px;
   justify-content: center;
   align-items: center;
   font-size: 12px;
+  align-self: center;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(0deg, $bg-color, $bg-color-secondary);
+    box-shadow: inset -1px -1px 1px white, inset 1px 1px 1px black;
+  }
+
+  &:active {
+    color: $ekelund3;
+  }
 }
 
 $breakpoint-tablet: 960px;

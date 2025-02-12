@@ -1,7 +1,7 @@
 import "./FilterBar.scss";
 
 const FilterBarCompact = () => {
-  return <div className="FilterBarCompact">Filter</div>;
+  return <button className="FilterBarCompact">Filter</button>;
 };
 
 export default FilterBarCompact;

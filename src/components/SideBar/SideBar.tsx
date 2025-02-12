@@ -34,23 +34,36 @@ const SideBar = () => {
             alt="logo"
           />
           <br />
-          <div className="icon-btn" onClick={() => toggleNotificationWindow()}>
-            {newNotification ? <RiMailUnreadLine /> : <RiMailLine />}
+          <button
+            className="icon-btn"
+            onClick={() => toggleNotificationWindow()}
+          >
+            {newNotification ? (
+              <span>
+                <RiMailUnreadLine />
+              </span>
+            ) : (
+              <span>
+                <RiMailLine />
+              </span>
+            )}
             <p style={{ fontSize: 12 }}>Notifications</p>
-          </div>
+          </button>
           <br />
-          <div className="icon-btn">
-            <RiSettings5Line />
+          <button className="icon-btn">
+            <span>
+              <RiSettings5Line />
+            </span>
             <p style={{ fontSize: 12 }}>Settings</p>
-          </div>
+          </button>
         </div>
         <div className="bottom-container">
           <RiQuestionLine />
           <p style={{ fontSize: 12 }}>Support</p>
           <br />
-          <div className="user">
+          <button className="user">
             <FaUserCircle />
-          </div>
+          </button>
         </div>
       </div>
     </>
