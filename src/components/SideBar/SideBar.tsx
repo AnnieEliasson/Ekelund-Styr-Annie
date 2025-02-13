@@ -17,10 +17,10 @@ const SideBar = () => {
       ".Notifications"
     ) as HTMLElement;
 
-    if (notificationWindow.style.marginLeft == "120px") {
+    if (notificationWindow.style.marginLeft == "90px") {
       notificationWindow.style.marginLeft = "-500px";
     } else {
-      notificationWindow.style.marginLeft = "120px";
+      notificationWindow.style.marginLeft = "90px";
     }
   };
 
