@@ -172,4 +172,8 @@ $breakpoint-tablet: 960px;
   .FilterBarCompact {
     display: flex;
   }
+
+  .used-filter-container {
+    display: none;
+  }
 }

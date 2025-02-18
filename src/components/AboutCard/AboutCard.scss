@@ -1,10 +1,11 @@
+@use "../../styles/colors" as *;
 .AboutCard {
   width: 90%;
   height: auto;
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
-  background-color: white;
+  background-color: $bg-banner-nav;
   display: flex;
   flex-wrap: wrap;
   font-size: 12px;

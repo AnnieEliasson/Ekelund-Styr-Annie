@@ -1,6 +1,7 @@
+@use "../../styles/colors" as *;
 .NavBar {
   width: 90%;
-  background-color: white;
+  background-color: $bg-banner-nav;
   border: 1px solid lightgrey;
   border-radius: 10px;
   padding: 0 10px;

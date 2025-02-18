@@ -31,18 +31,22 @@ const Modal = () => {
         <div className="search-container">
           <FilterBtn />
           <SearchBar />
-          <img
-            className="comment-icon"
-            src="src\assets\Property 2=addcomment FAB.png"
-            alt=""
-            onClick={() => {
-              const comment = document.querySelector(
-                ".NewComment"
-              ) as HTMLElement;
+          <div className="small-icons-container">
+            <img
+              className="comment-icon"
+              src="src\assets\addcomment.svg"
+              alt=""
+              onClick={() => {
+                const comment = document.querySelector(
+                  ".NewComment"
+                ) as HTMLElement;
 
-              comment.style.display = "block";
-            }}
-          />
+                comment.style.display = "block";
+              }}
+            />
+            <img className="comment-icon" src="src\assets\Send.svg" alt="" />
+            <img className="comment-icon" src="src\assets\Delete.svg" alt="" />
+          </div>
         </div>
         <NewComment />
         <PropertyTable />

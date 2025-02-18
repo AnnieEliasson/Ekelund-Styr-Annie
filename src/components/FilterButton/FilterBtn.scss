@@ -1,7 +1,8 @@
+@use "../../styles/colors" as *;
 .FilterBtn {
   border: 0px solid #322f6d;
   border-radius: 10px;
-  background-color: white;
+  background-color: $bg-banner-nav;
   display: flex;
   justify-content: center;
   align-items: center;

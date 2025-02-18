@@ -1,3 +1,4 @@
+@use "../../styles/colors" as *;
 .table-container {
   width: 90%;
   overflow-x: auto;
@@ -21,12 +22,12 @@
 }
 
 .property-table th {
-  background-color: #f4f4f4;
+  background-color: $bg-banner-nav;
   font-weight: bold;
 }
 
 .property-table tbody tr:nth-child(even) {
-  background-color: #f9f9f98a;
+  background-color: $bg-banner-nav;
 }
 
 .center {
