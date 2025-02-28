@@ -9,6 +9,8 @@ export type Property = {
   operationalAlarms: number;
   safetyAlarms: number;
   newAlarms: number;
+  latitude: number;
+  longitude: number;
 };
 
 type PropertiesContextType = {

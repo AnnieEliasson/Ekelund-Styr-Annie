@@ -1,7 +1,7 @@
 import "./App.scss";
 import Dashboard from "./components/Dashboard/Dashboard";
+import SimpleMap from "./components/Map/SimpleMap";
 import Modal from "./components/Modal/Modal";
-
 import SideBar from "./components/SideBar/SideBar";
 import { PropertiesProvider } from "./context/PropertyContextProvider";
 
@@ -16,6 +16,7 @@ function App() {
         })}
       </ul>
        */}
+
       <PropertiesProvider>
         <Modal />
         <Dashboard />

@@ -1,17 +1,10 @@
 import "./DashboardItem.scss";
 import HouseIcon from "../HouseIcon/HouseIcon";
 import NewAlarmTag from "../NewAlarmTag/NewAlarmTag";
+import { Property } from "../../../context/PropertyContextProvider";
 
 type Props = {
-  searchResult: {
-    name: string;
-    streetAddress: string;
-    postalAddress: string;
-    technicalAlarms: number;
-    operationalAlarms: number;
-    safetyAlarms: number;
-    newAlarms: number;
-  }[];
+  searchResult: Property[];
 };
 
 const DashboardItem = ({ searchResult }: Props) => {

@@ -34,6 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     &:active {
       /* border: 1px solid black; */
@@ -43,5 +44,41 @@
     img {
       width: 40px;
     }
+
+    .hover-info-container {
+      position: absolute;
+      top: 120px;
+      width: max-content;
+      background-color: white;
+      padding: 8px;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 2px 2px 5px black;
+      transition: transform 0.3s ease-in-out;
+
+      .hover-info-alarmlist {
+        list-style: none;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    }
   }
+}
+
+.scale {
+  transform: scale(0.5);
+
+  &:hover,
+  &:focus {
+    transform: scale(0.6);
+  }
+}
+
+.scale-house {
+  transform: scale(0.5);
+}
+
+.map-header-color {
+  background-color: rgba(0, 0, 0, 0.315);
 }
