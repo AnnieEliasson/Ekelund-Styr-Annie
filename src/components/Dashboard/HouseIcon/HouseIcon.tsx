@@ -51,7 +51,7 @@ const HouseIcon = ({ item, mapMarker }: Props) => {
           src="src/assets/Home.svg"
           alt=""
         />
-        {viewInfo && (
+        {viewInfo && mapMarker && (
           <div className="hover-info-container">
             <p>{item.name}</p>
             <ul className="hover-info-alarmlist">
